@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.event.field_address
-    - field.field.taxonomy_term.event.field_description
     - field.field.taxonomy_term.event.field_end_date
     - field.field.taxonomy_term.event.field_event_langauge
     - field.field.taxonomy_term.event.field_location
@@ -22,7 +21,7 @@ dependencies:
     - text
   enforced:
     module:
-      - islandora_event    -
+      - islandora_event
 id: taxonomy_term.event.default
 targetEntityType: taxonomy_term
 bundle: event

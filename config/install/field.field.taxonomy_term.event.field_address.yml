@@ -6,7 +6,7 @@ dependencies:
     - taxonomy.vocabulary.event
   enforced:
     module:
-      - islandora_event    -
+      - islandora_event
 id: taxonomy_term.event.field_address
 field_name: field_address
 entity_type: taxonomy_term
