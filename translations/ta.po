@@ -1,0 +1,50 @@
+# Tamil translation of Islandora 8
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-05-10 13:00-0500\n"
+"PO-Revision-Date: 2019-05-10 13:00-0500\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Subject"
+msgstr "துறை"
+
+msgid "Description"
+msgstr "விபரிப்பு"
+
+msgid "Address"
+msgstr "முகவரி"
+
+msgid "Start Date"
+msgstr "தொடக்க திகதி"
+
+msgid "End Date"
+msgstr "முடிவுத் திகதி"
+
+msgid "Event Langauge"
+msgstr "நிகழ்வு மொழி"
+
+msgid "Organizer"
+msgstr "ஒழுங்கமைப்பாளர்"
+
+msgid "Participant"
+msgstr "பங்கேற்பாளர்"
+
+msgid "Sponsor"
+msgstr "புரவலர்"
+
+msgid "Temporal"
+msgstr "காலம்"
+
+msgid "Work Featured"
+msgstr "தொடர்புடைய வளம்"
+
+msgid "Reference"
+msgstr "மேற்கோள்"
+

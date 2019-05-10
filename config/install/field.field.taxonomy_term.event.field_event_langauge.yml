@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_event_langauge
+    - taxonomy.vocabulary.event
+    - taxonomy.vocabulary.language
+  enforced:
+    module:
+      - islandora_event
+id: taxonomy_term.event.field_event_langauge
+field_name: field_event_langauge
+entity_type: taxonomy_term
+bundle: event
+label: 'Event Langauge'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      language: language
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

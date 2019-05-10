@@ -1,0 +1,145 @@
+uuid: e514734d-1ebe-4e2a-a7ab-ccdf39c8f5c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.event.field_address
+    - field.field.taxonomy_term.event.field_description
+    - field.field.taxonomy_term.event.field_end_date
+    - field.field.taxonomy_term.event.field_event_langauge
+    - field.field.taxonomy_term.event.field_location
+    - field.field.taxonomy_term.event.field_organizer
+    - field.field.taxonomy_term.event.field_participant
+    - field.field.taxonomy_term.event.field_reference
+    - field.field.taxonomy_term.event.field_sponsor
+    - field.field.taxonomy_term.event.field_start_date
+    - field.field.taxonomy_term.event.field_subject
+    - field.field.taxonomy_term.event.field_temporal
+    - field.field.taxonomy_term.event.field_work_featured
+    - taxonomy.vocabulary.event
+  module:
+    - datetime
+    - text
+  enforced:
+    module:
+      - islandora_event    -
+id: taxonomy_term.event.default
+targetEntityType: taxonomy_term
+bundle: event
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_address:
+    type: basic_string
+    weight: 4
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_end_date:
+    type: datetime_default
+    weight: 2
+    region: content
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_event_langauge:
+    type: entity_reference_label
+    weight: 8
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_location:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_organizer:
+    type: entity_reference_label
+    weight: 5
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_participant:
+    type: entity_reference_label
+    weight: 6
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_reference:
+    weight: 12
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_sponsor:
+    type: entity_reference_label
+    weight: 7
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_start_date:
+    type: datetime_default
+    weight: 1
+    region: content
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_subject:
+    type: entity_reference_label
+    weight: 9
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_temporal:
+    type: entity_reference_label
+    weight: 10
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_work_featured:
+    weight: 11
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  langcode:
+    type: language
+    weight: 13
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+hidden:
+  field_description: true

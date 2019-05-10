@@ -1,0 +1,12 @@
+name: Islandora Event
+type: module
+core: 8.x
+dependencies:
+  - content_translation
+  - controlled_access_terms_default_configuration
+  - datetime
+  - field
+  - field_permissions
+  - language
+  - node
+  - taxonomy

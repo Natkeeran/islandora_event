@@ -1,0 +1,31 @@
+uuid: df0c3e6d-9d34-4caf-9408-4b09695a2591
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_reference
+    - node.type.islandora_object
+    - taxonomy.vocabulary.event
+  enforced:
+    module:
+      - islandora_event
+id: taxonomy_term.event.field_reference
+field_name: field_reference
+entity_type: taxonomy_term
+bundle: event
+label: Reference
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      islandora_object: islandora_object
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

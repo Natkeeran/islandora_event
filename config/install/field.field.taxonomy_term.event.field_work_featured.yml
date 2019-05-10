@@ -1,0 +1,31 @@
+uuid: 8917cf5e-3b73-4882-8183-eb0d3ed1b7a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_work_featured
+    - node.type.islandora_object
+    - taxonomy.vocabulary.event
+  enforced:
+    module:
+      - islandora_event
+id: taxonomy_term.event.field_work_featured
+field_name: field_work_featured
+entity_type: taxonomy_term
+bundle: event
+label: 'Work Featured'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      islandora_object: islandora_object
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

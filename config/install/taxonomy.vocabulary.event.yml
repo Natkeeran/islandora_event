@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - islandora_event
+name: Event
+vid: event
+description: ''
+hierarchy: 0
+weight: 0
