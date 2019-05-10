@@ -16,13 +16,16 @@ dependencies:
     - field.field.taxonomy_term.event.field_temporal
     - field.field.taxonomy_term.event.field_work_featured
     - taxonomy.vocabulary.event
-  module:
-    - datetime
-    - path
-    - text
   enforced:
     module:
       - islandora_event
+  module:
+    - datetime
+    - inline_entity_form
+    - path
+    - text
+_core:
+  default_config_hash: Hq-6k9UUcGQLxnJlbm9R_q-DNkQq4YBQUOpZKaR7q8g
 id: taxonomy_term.event.default
 targetEntityType: taxonomy_term
 bundle: event
@@ -30,7 +33,7 @@ mode: default
 content:
   description:
     type: text_textarea
-    weight: 2
+    weight: 1
     region: content
     settings:
       placeholder: ''
@@ -38,7 +41,7 @@ content:
     third_party_settings: {  }
   field_address:
     type: string_textarea
-    weight: 1
+    weight: 3
     region: content
     settings:
       rows: 5
@@ -55,13 +58,13 @@ content:
     weight: 9
     region: content
     settings:
-      match_operator: CONTAINS
+      match_operator: STARTS_WITH
       size: 60
       placeholder: ''
     third_party_settings: {  }
   field_location:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 2
     region: content
     settings:
       match_operator: CONTAINS
@@ -69,22 +72,36 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_organizer:
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     weight: 6
     region: content
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: STARTS_WITH
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings: {  }
   field_participant:
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     weight: 8
     region: content
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: STARTS_WITH
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings: {  }
   field_reference:
     weight: 13
@@ -96,13 +113,20 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_sponsor:
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     weight: 7
     region: content
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: STARTS_WITH
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings: {  }
   field_start_date:
     type: datetime_default
@@ -111,22 +135,36 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_subject:
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     weight: 10
     region: content
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: STARTS_WITH
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings: {  }
   field_temporal:
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     weight: 11
     region: content
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: STARTS_WITH
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings: {  }
   field_work_featured:
     weight: 12

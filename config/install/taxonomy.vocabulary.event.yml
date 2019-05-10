@@ -6,6 +6,6 @@ dependencies:
       - islandora_event
 name: Event
 vid: event
-description: ''
+description: 'An event happening at a certain time and location, such as a protest, festival or lecture.'
 hierarchy: 0
 weight: 0
